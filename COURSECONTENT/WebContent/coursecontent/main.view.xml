@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="coursecontent.main" xmlns:html="http://www.w3.org/1999/xhtml"
+
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Page title="{/coursecontentset/title}" content="{/coursecontentset/coursetype}">
+		<content>
+                
+                
+                
+                
+			
+
+				<f:SimpleForm content="" title="{title}">
+				
+                    <VBox  items="{content}">
+					<Panel expandable="true" headerText="{title}" width="100%">
+						<List items="{subcontent}">
+							<items>
+								<StandardListItem title="{subtitle}" />
+							</items>
+						</List>
+					</Panel>
+					</VBox>
+				</f:SimpleForm>
+			
+
+
+		</content>
+	</Page>
+</core:View>
